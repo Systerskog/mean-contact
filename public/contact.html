@@ -1,0 +1,23 @@
+
+<div class="container">
+      <h2>
+        {{ contact.firstName }} {{ contact.lastName }}
+      </h2>
+
+  <div ng-hide="editMode">
+      <p ng-if="contact.email">email: <a ng-href="mailto:{{ contact.email }}" target="_blank">{{ contact.email }}</a></p>
+      <p ng-if="contact.phone.mobile">phone (m): {{ contact.phone.mobile }} </p>
+      <p ng-if="contact.phone.work">phone (w): {{ contact.phone.work }} </p>
+      <p ng-if="contact.address"> address: {{ contact.address }} </p>
+      <p ng-if="contact.twitter"> twitter: <a ng-href="https://twitter.com/{{ contact.twitter }}" target="_blank">@{{ contact.twitter }}</a></p>
+      <p> 
+        <a class="button" href="#/"><i class="fas fa-arrow-left"></i>&ensp; Back</a>
+        <a href="#/"><button id="del-btn" class="button" ng-click="deleteContact(contact._id)">Delete</button></a>
+        <button class="button-primary" ng-click="toggleEdit()">Edit</button>
+      </p>
+
+  </div>
+ </div>
+  <!-- Contact form -->
+  <div ng-include="contactFormUrl">
+  </div>

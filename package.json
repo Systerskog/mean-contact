@@ -1,0 +1,30 @@
+{
+  "name": "mean-app2",
+  "version": "1.0.0",
+  "description": "A MEAN app that allows users to manage contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syterskog/mean-contact.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Express",
+    "Angular"
+  ],
+  "author": "Nina Lindgren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syterskog/mean-contact/issues"
+  },
+  "homepage": "https://github.com/syterskog/mean-contact",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "mongodb": "^2.0.43"
+  }
+}

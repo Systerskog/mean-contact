@@ -1,0 +1,8 @@
+{
+  "name": "MEAN Contact List",
+  "description": "A MEAN app that allows users to manage a contact list.",
+  "repository": "https://github.com/systerskog/mean-contact",
+  "logo": "https://mlab.com/company/brand/resources/mLab-logo-onlight.png",
+  "keywords": ["MEAN", "REST", "API", "node", "express", "angular", "mongodb"],
+  "addons": ["mongolab"]
+}

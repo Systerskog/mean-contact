@@ -1,0 +1,55 @@
+<div class="container">
+  
+  <div ng-hide="contact._id">
+      <h2>Create new contact</h2>
+  </div>
+
+  <div class="row">
+    <div class="six columns">
+    <p>
+        <label><i class="fas fa-user-circle"></i>&ensp; First Name (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="contact.firstName" required> 
+    </p>
+    </div>
+    <div class="six columns">
+    <p>
+        <label><i class="fas fa-user-friends"></i>&ensp; Family Name (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="contact.lastName" required> 
+    </p>
+    </div>
+    </div><!-- .row -->
+
+    <p>
+        <label><i class="fas fa-envelope"></i>&ensp; Email (required)</label><br>
+      <input id="name" class="form-control" type="email" ng-model="contact.email" required> 
+    </p>   
+    
+    <div class="row">
+    <div class="six columns">
+    <p>
+        <label><i class="fas fa-mobile-alt"></i>&ensp; Phone (Mobile)</label><br>
+      <input id="name" class="form-control" type="text" ng-model="contact.phone.mobile"> 
+    </p>
+    </div>  
+    <div class="six columns">
+    <p>
+        <label><i class="fas fa-phone"></i>&ensp; Phone (Work)</label><br>
+      <input id="name" class="form-control" type="text" ng-model="contact.phone.work"> 
+    </p>
+    </div>  
+  </div><!-- .row -->
+
+    <p>
+        <label><i class="fas fa-map-marked-alt"></i>&ensp; Address</label><br>
+      <input id="name" class="form-control" type="text" ng-model="contact.address"> 
+    </p>
+    <p>
+        <label><i class="fab fa-twitter"></i>&ensp; Twitter Handle</label><br>
+      <input id="name" class="form-control" type="text" ng-model="contact.twitter"> 
+    </p>
+    <p>
+      <button class="button" ng-click="back()"><i class="fas fa-arrow-left"></i>&ensp; Back</button>
+      <button class="button-primary" ng-click="saveContact(contact)">Save</button>
+    </p>
+  </div>
+</div>
